@@ -47,7 +47,7 @@ router.get('/messages', async (ctx) => {
   let { amountChildren } = ctx.request.query;
   amountChildren = +amountChildren;
 
-  const messagesPortion = 10;
+  const messagesPortion = 4;
   let body;
   let rest = messages.length;
 
@@ -114,7 +114,7 @@ router.patch('/messages', async (ctx) => {
   const { id, changedOption } = ctx.request.body;
   const messageIndex = messages.findIndex((message) => message.id === id);
   if (messageIndex === -1) {
-    ctx.response.body = `Message with id #"${id}" not found!`;;
+    ctx.response.body = `Message with id #"${id}" not found!`;
     ctx.response.status = 400;
   } else {
     messages[messageIndex][changedOption] = !messages[messageIndex][changedOption];

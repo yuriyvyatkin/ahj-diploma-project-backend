@@ -1,15 +1,17 @@
 {
-  "name": "ahj",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "diary-backend",
+  "author": {
+    "name": "Yuriy Vyatkin"
+  },
+  "license": "Mozilla Public License 2.0",
+  "repository": "https://github.com/yuriyvyatkin/ahj-diploma-project-backend",
+  "main": "src/index.js",
+  "private": true,
   "scripts": {
     "prestart": "npm install",
     "start": "forever server.js",
     "watch": "forever -w server.js"
   },
-  "author": "coursar",
-  "license": "ISC",
   "dependencies": {
     "@koa/router": "^10.1.1",
     "forever": "^3.0.4",

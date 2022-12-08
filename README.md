@@ -1,4 +1,4 @@
-# Дипломное задание к курсу «Продвинутый JavaScript в браузере». Chaos Organizer
+# Дипломная работа курса «Продвинутый JavaScript в браузере»
 
 [Ссылка на Heroku](https://chaos-organizer-2021.herokuapp.com/)
 
